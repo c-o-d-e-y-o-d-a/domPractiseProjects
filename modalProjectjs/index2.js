@@ -29,8 +29,4 @@ window.onclick = function(event) {
   
 }
 
- function fn(){
-    modal.style.display=="none";
-}
-
-document.body.addEventListener('click', fn, true);
+ 
