@@ -39,6 +39,10 @@ body{
     height: 200px;
     width: 200px;
     display: none;
+    overflow: auto;
+
+    animation: comeDown 0.6s ;
+    
     
     position:fixed ;
     top: 40%;
@@ -52,7 +56,31 @@ body{
 .modalcontent{margin-top: 20%;
     
     font-size: 20px;
+    
 
 
 }
+
+.exitButton{
+    margin-top: 15px;
+    font-size: 20px;
+    
+    
+    
+}
+.exitButton:hover{
+    font-size: 22px;
+    display: inline-block;
+    border: 1px solid rgb(190, 185, 185);
+}
+
+@keyframes comeDown {
+    from{top: 0%; left: 0%;}
+    to{    top: 40%;
+        left: 45%;
+    }
+    
+}
+
+
 

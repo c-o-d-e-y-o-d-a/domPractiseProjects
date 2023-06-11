@@ -1,27 +1,32 @@
-const body = document.querySelector('body');
-const modalBox = document.querySelector('.modal');
+var modal = document.getElementById("modalWindow");
 
-const button = document.querySelector('.button1');
+var btn = document.getElementById("button1");
 
+var span = document.getElementsByClassName("exitButton")[0];
 
+var body = document.querySelector('body');
 
-
-
-button.addEventListener('hover',showModal);
-
-function showModal(){
-    if(modalBox.style.display===none){
-        modalBox.style.display='inline-block';
-
+btn.onclick = function() {
+    if(modal.style.display = "none"){
+        modal.style.display = "block";
     }
-    body.style.opacity=0.7;
-
-
+    
+  
 }
 
-body.addEventListener('click',removeModal);
 
-function removeModal(){
-    body.style.opacity=1;
 
+span.onclick = function() {
+  modal.style.display = "none";
 }
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+ function fn(){
+    modal.style.display=="none";
+}
+
+document.body.addEventListener('click', fn, true);
