@@ -21,10 +21,14 @@ span.onclick = function() {
 }
 
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+    
+    if (event.target !== modal && event.target !== btn) {
+        modal.style.display = "none";
+      }
+      
+  
 }
+
  function fn(){
     modal.style.display=="none";
 }
