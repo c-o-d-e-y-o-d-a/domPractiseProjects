@@ -1,0 +1,67 @@
+body{
+    background: url(/images/dali.png)  no-repeat ;
+    background-size: cover;
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+        font-size: 62.6% ;
+
+    
+}
+
+
+.stopwatch-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 33vh;
+    background-color: azure;
+    display: inline-flex;
+    align-self: center;
+    width: 33vw;
+    height: 33vh;
+    opacity: 0.8;
+
+    border-radius: 10px;
+    border: 3px solid orange;
+}
+
+.time{
+    font-size: 3rem;
+    background-color: white;
+    opacity: 1  ;
+    border: 1px solid black;
+    padding: 7px 7px 7px 7px;
+    border-radius: 6px;
+}
+
+.buttons{
+}
+
+.resetButton , .stopStartButton{
+
+    display: inline;
+    margin-left: 25px;
+    width: 30px;
+    height: 30px;
+    margin-top: 3vh;
+    margin-top: 4vh;
+
+}
+.run{
+    display: inline;
+    margin-top: 4vh;
+
+
+
+}
+
+
+
